@@ -112,7 +112,9 @@ dSidebar <- dashboardSidebar(
 
 
 dBody <- dashboardBody(
-  tabItems(tab1, tab2, tab3))
+  tabItems(tab1, tab2, tab3),
+  tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "custom.css"))
+    )
 
 ui <- dashboardPage(dHeader, dSidebar, dBody)
 
